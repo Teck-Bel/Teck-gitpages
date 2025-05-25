@@ -19,7 +19,8 @@ h1 {
 }
 
 .logo{
-height: 100px;
+  height: 100px;
+  border-radius: 12px;
 }
 
 nav ul {
