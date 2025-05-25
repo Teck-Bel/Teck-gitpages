@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WaterTeck Pakketten</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f9ff;
+      margin: 0;
+      padding: 20px;
+      color: #003366;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      border: 2px solid #003366;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 51, 102, 0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .badge {
+      border: 2px solid #003366;
+      color: #003366;
+      font-weight: bold;
+      font-size: 0.9em;
+      padding: 3px 10px;
+      border-radius: 12px;
+      display: inline-block;
+      margin-left: auto;
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .card-header h2 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #004080;
+    }
+    .button {
+      margin-top: 20px;
+      background-color: #003366;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #002244;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>WaterTeck Pakketten – Maritieme Technologie</h1>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="card-header">
+        <h2>WaterTeck Base</h2>
+        <span class="badge">Starter</span>
+      </div>
+      <p>Voor kleine vaartuigen of testprojecten. Ideaal om te starten met maritieme monitoring.</p>
+      <ul>
+        <li>Basis maritiem sensorsysteem (temperatuur, zoutgehalte, golfhoogte)</li>
+        <li>Lokale datalogger + Bluetooth connectie</li>
+        <li>Dashboard via mobiele app</li>
+        <li>Software-updates inbegrepen</li>
+      </ul>
+      <button class="button">Meer info</button>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>WaterTeck Pro</h2>
+        <span class="badge">Populair</span>
+      </div>
+      <p>Voor commerciële schepen of kusttoepassingen. Uitgebreide dataverwerking en connectiviteit.</p>
+      <ul>
+        <li>Geavanceerde sensorarray (stroming, druk, troebelheid, wind)</li>
+        <li>Real-time dataverzending via 4G/5G of satelliet</li>
+        <li>Webportaal + mobiele controle</li>
+        <li>Waarschuwingen & statusrapporten</li>
+        <li>Remote troubleshooting</li>
+      </ul>
+      <button class="button">Meer info</button>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>WaterTeck PortGuard</h2>
+        <span class="badge">Havenoplossing</span>
+      </div>
+      <p>Voor havens en offshore-installaties. Continu toezicht en geïntegreerde systemen.</p>
+      <ul>
+        <li>24/7 monitoring van waterkwaliteit, niveau en stroming</li>
+        <li>Integratie met havenbeveiliging en sluissystemen</li>
+        <li>Rapportage voor milieu-inspectie</li>
+        <li>Alarmfuncties bij afwijkingen</li>
+        <li>API voor integratie in havenbeheerplatforms</li>
+      </ul>
+      <button class="button">Meer info</button>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>WaterTeck FleetLink</h2>
+        <span class="badge">Fleet</span>
+      </div>
+      <p>Voor vloten van rederijen of overheden. Centraal beheer en uitgebreide rapportage.</p>
+      <ul>
+        <li>Volledig beheersysteem voor meerdere vaartuigen</li>
+        <li>Fleet-dashboard met overzichtspagina’s</li>
+        <li>Sensorstatus per schip & onderhoudsrapporten</li>
+        <li>Maatwerk integraties (AIS, radar, weerdata)</li>
+        <li>Prioritaire support & 24/7 monitoringondersteuning</li>
+      </ul>
+      <button class="button">Meer info</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
