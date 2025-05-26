@@ -1,13 +1,10 @@
 /* ===== Basisstijl ===== */
 body {
   font-family: Arial, sans-serif;
+  background-color: #001f3f;
   margin: 0;
-  /* Let op: in het eerste bestand was een donkerblauwe achtergrond (#001f3f),
-     in het tweede lichtblauw (#f5f8fa). Kies wat je wilt, hieronder heb ik
-     #f5f8fa als lichte achtergrond aangehouden. Wil je donker, zet dan #001f3f */
-  background-color: #f5f8fa;
-  color: #001f3f; /* donkerblauw */
-  padding: 20px;  /* uit eerste bestand */
+  padding: 20px; 
+  color: #fcfcfc; 
 }
 
 /* ===== Headers ===== */
@@ -29,10 +26,9 @@ h1 {
 
 h2 {
   font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 0 0 30px 0;
+  margin: 0;
   padding: 20px 0;
-  color: #054f9b; /* uit eerste bestand */
+  color: #054f9b; 
 }
 
 /* ===== Navigatie ===== */
