@@ -143,6 +143,9 @@ ul {
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, background-color 0.3s;
+  box-sizing: border-box;
+  width: 100%; /* zorgt dat tile nooit breder wordt dan gridcel */
+
 }
 
 .dashboard-tile:hover {
