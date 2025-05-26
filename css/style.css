@@ -1,35 +1,50 @@
+/* ===== Basisstijl ===== */
 body {
   font-family: Arial, sans-serif;
-  background: #001f3f;
   margin: 0;
-  padding: 20px;
-  color: #fcfcfc;
+  /* Let op: in het eerste bestand was een donkerblauwe achtergrond (#001f3f),
+     in het tweede lichtblauw (#f5f8fa). Kies wat je wilt, hieronder heb ik
+     #f5f8fa als lichte achtergrond aangehouden. Wil je donker, zet dan #001f3f */
+  background-color: #f5f8fa;
+  color: #001f3f; /* donkerblauw */
+  padding: 20px;  /* uit eerste bestand */
 }
-/*opmaak titels*/
+
+/* ===== Headers ===== */
+header {
+  background-color: #001f3f;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
 h1 {
   margin-bottom: 30px;
 }
 
 h2 {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  color: #054f9b;
-}
-/*opmaak paragrafen*/
-.overzicht-paragraaf {
-  color: #054f9b;
+  text-align: center;
+  margin: 0 0 30px 0;
+  padding: 20px 0;
+  color: #054f9b; /* uit eerste bestand */
 }
 
+/* ===== Navigatie ===== */
 .site-header {
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 20px;
-  backround-color: #f5f5f5;
+  background-color: #f5f5f5; /* 'backround-color' typo gecorrigeerd */
 }
 
-.logo{
+.logo {
   height: 100px;
   border-radius: 12px;
 }
@@ -53,6 +68,18 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* ===== Tekst en paragrafen ===== */
+.overzicht-paragraaf {
+  color: #054f9b;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #004080;
+}
+
+/* ===== Tabellen en grids ===== */
 .infotabel {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
@@ -82,6 +109,7 @@ nav a:hover {
   border-bottom: 1px solid #ddd;
 }
 
+/* ===== Foto styling ===== */
 .foto {
   width: 100%;           /* past automatisch binnen de cel */
   max-width: 150px;      /* voorkomt dat ze te breed worden */
@@ -91,6 +119,7 @@ nav a:hover {
   object-fit: cover;     /* vult het vlak mooi zonder vervormen */
 }
 
+/* ===== Dashboard styling ===== */
 .dashboard {
   display: flex;
   gap: 20px;
@@ -121,148 +150,123 @@ nav a:hover {
 
 .dashboard-tile:hover {
   background-color: #fcfcfc;
-  transform: translateY(-4px);
+  padding: 3px 10px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-left: auto;
 }
 
-.dashboard-tile img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+/* ===== Kaarten ===== */
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+/* ===== Buttons ===== */
+.button {
+  margin-top: 20px;
+  background-color: #003366;
+  color: white;
+  border: none;
   border-radius: 8px;
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #002244;
+}
+
+/* ===== Team pagina ===== */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-member {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 220px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #001f3f;
+}
+
+.team-member h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #001f3f;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  max-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
   margin-bottom: 10px;
 }
 
-.dashboard-tile span {
-  font-weight: bold;
-  color: #fcfcfc;
-}
-
-.top-nav {
-  position: fixed;
-  top: 10px;
-  right: 10px; /* verander van left: 10px naar right: 10px */
-  z-index: 1000;
-}
-
-.home-button {
-  display: inline-block;
-  padding: 10px 16px;
-  background-color: #1976d2;
-  color: white;
+.footer-section a {
+  color: #ffffffcc;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  transition: background-color 0.3s;
-}
-
-.home-button:hover {
-  background-color: #1565c0;
-}
-
-.mijn-afbeelding {
-  max-width: 100%;
-  height: auto;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   display: block;
-  margin: 20px auto;         /* centreren met marge boven en onder */
+  margin-bottom: 6px;
 }
 
-.container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
+.footer-section a:hover {
+  color: white;
+}
 
-.card {
-      background: white;
-      border: 2px solid #003366;
-      border-radius: 15px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0, 51, 102, 0.2);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .badge {
-      border: 2px solid #003366;
-      color: #003366;
-      font-weight: bold;
-      font-size: 0.9em;
-      padding: 3px 10px;
-      border-radius: 12px;
-      display: inline-block;
-      margin-left: auto;
-    }
-
-    .card-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 15px;
-    }
-
-    .card-header h2 {
-      margin: 0;
-      font-size: 1.5em;
-    }
-
- .button {
-      margin-top: 20px;
-      background-color: #003366;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      padding: 10px;
-      font-size: 1em;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #002244;
-    }
-
-ul {
-      list-style-type: disc;
-      padding-left: 20px;
-      color: #004080;
-    }
-footer {
-    background-color: #001f3f;
-    color: white;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .footer-section {
-    max-width: 200px;
-    margin: 10px;
-  }
-
-  .footer-section h4 {
-    margin-bottom: 10px;
-  }
-
-  .footer-section a {
-    color: #ffffffcc;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 6px;
-  }
-
-  .footer-section a:hover {
-    color: white;
-  }
-
-  .copyright {
-    text-align: center;
-    padding: 10px;
-    background-color: #000c1a;
-    color: #aaa;
-    font-size: 12px;
-  }
+.copyright {
+  text-align: center;
+  padding: 10px;
+  background-color: #000c1a;
+  color: #aaa;
+  font-size: 12px;
+  width: 100%;
+  margin-top: 20px;
+}
