@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <title>Offerte Aanvragen | Teck</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="/Teck-gitpages/css/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <img src="images/teck-logo.png" alt="Teck Logo" class="logo">
+    <img src="/Teck-gitpages/images/teck-logo.png" alt="Teck Logo" class="logo">
     <h1>Offerte Aanvragen</h1>
   </header>
 
@@ -18,6 +18,14 @@
 
       <label for="email">E-mailadres:</label><br />
       <input type="email" name="email" id="email" required /><br /><br />
+
+      <label for="Afdeling">Afdeling:</label>
+      <select id="afdeling" name="afdeling" required>
+        <option value="">-- Kies een afdeling --</option>
+        <option value="SkyTeck">SkyTeck</option>
+        <option value="WaterTeck">WaterTeck</option>
+        <option value="EduTeck">EduTeck</option>
+       </select>
 
       <label for="onderwerp">Onderwerp:</label><br />
       <input type="text" name="onderwerp" id="onderwerp" required /><br /><br />
