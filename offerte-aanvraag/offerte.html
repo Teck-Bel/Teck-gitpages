@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="nl">
- <head>
-   <meta charst="UTF-8"/>
-   <title>Offerte aanvragen</title> 
-   <link rel="icon" type="image/png" href="images/teck-logo.png">
-   <link rel="stylesheet" href="css/style.css"/> 
+<head>
+  <meta charset="UTF-8" />
+  <title>Offerte aanvragen</title>
+  <link rel="icon" type="image/png" href="/Teck-gitpages/images/teck-logo.png" />
+  <link rel="stylesheet" href="/Teck-gitpages/css/style.css" />
 </head>
 <body>
-   <nav>
-      <nav class="top-nav">
-       <a href="/Teck-gitpages/index.html" class="home-button">🏠 Home</a>
-       <a href="/Teck-gitpages/offerte-aanvraag/offerte.html">📝 Offerte aanvragen </a>
-   </nav>
+  <nav class="top-nav">
+    <a href="/Teck-gitpages/index.html" class="home-button">🏠 Home</a>
+    <a href="/Teck-gitpages/offerte-aanvraag/offerte.html">📝 Offerte aanvragen</a>
+  </nav>
+
   <header class="site-header">
-    <img src="/Teck-gitpages/images/teck-logo.png" alt="Teck Logo" class="logo">
+    <img src="/Teck-gitpages/images/teck-logo.png" alt="Teck Logo" class="logo" />
     <h1>Offerte Aanvragen</h1>
   </header>
 
   <main style="max-width: 600px; margin: auto; padding: 20px;">
-    <form action="https://formspree.io/f/mqabzznv" method="POST">
+    <form action="https://formspree.io/f/mqabzznv" method="POST" id="offerteForm">
       <label for="naam">Naam:</label><br />
       <input type="text" name="naam" id="naam" required /><br /><br />
 
       <label for="email">E-mailadres:</label><br />
       <input type="email" name="email" id="email" required /><br /><br />
 
-      <label for="Afdeling">Afdeling:</label>
+      <label for="afdeling">Afdeling:</label><br />
       <select id="afdeling" name="afdeling" required>
         <option value="">-- Kies een afdeling --</option>
         <option value="SkyTeck">SkyTeck</option>
         <option value="WaterTeck">WaterTeck</option>
         <option value="EduTeck">EduTeck</option>
-       </select>
+      </select><br /><br />
 
-     <label for="Product">Product:</label>
-      <select id="product" name="produt" required>
+      <label for="product">Product:</label><br />
+      <select id="product" name="product" required>
         <option value="">-- Kies een product --</option>
-        <option value="SkyTeck">p1</option>
-        <option value="WaterTeck">p2</option>
-        <option value="EduTeck">p3</option>
-       </select>
-     
+      </select><br /><br />
+
       <label for="onderwerp">Onderwerp:</label><br />
       <input type="text" name="onderwerp" id="onderwerp" required /><br /><br />
 
@@ -57,5 +54,7 @@
       <a href="mailto:info@teck.com">info@teck.com</a>
     </div>
   </footer>
+
+  <script src="/Teck-gitpages/js/offerte.js"></script>
 </body>
 </html>
