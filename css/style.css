@@ -145,13 +145,25 @@ ul {
   transition: transform 0.2s, background-color 0.3s;
   box-sizing: border-box;
   width: 100%; /* zorgt dat tile nooit breder wordt dan gridcel */
+}
 
+.dashboard-tile img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 .dashboard-tile:hover {
   background-color: #fcfcfc;
   padding: 3px 10px;
   border-radius: 12px;
+}
+
+.dashboard-tile:hover span {
+  color: #001f3f;
 }
 
 /* ===== Kaarten ===== */
