@@ -7,15 +7,33 @@
   <link rel="stylesheet" href="/Teck-gitpages/css/style.css" />
 </head>
 <body>
-  <nav class="top-nav">
-    <a href="/Teck-gitpages/index.html" class="home-button">🏠 Home</a>
-    <a href="/Teck-gitpages/offerte-aanvraag/offerte.html">📝 Offerte aanvragen</a>
-  </nav>
+   <header class="site-header">
+      <img src="/Teck-gitpages/images/teck-logo.png" alt="Teck Logo" class="logo" />
 
-  <header class="site-header">
-    <img src="/Teck-gitpages/images/teck-logo.png" alt="Teck Logo" class="logo" />
-    <h1>Offerte Aanvragen</h1>
-  </header>
+      <!-- Titel boven de navigatie -->
+     <h1>Offerte Aanvragen</h1>
+
+      <nav class="top-nav">
+        <ul>
+          <li><a class="nav-button" href="/Teck-gitpages/index.html">Home</a></li>
+          <li class="dropdown">
+            <a class="nav-button" href="/Teck-gitpages/EduTeck/index.html">SkyTeck ▾</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown">
+                <a class="nav-button" href="/Teck-gitpages/EduTeck/pakkettenoverzicht.html">pakketten ▾</a>
+                <ul class="dropdown-menu">
+                  <li><a href="/Teck-gitpages/EduTeck/pakketten/STEM/overzicht.html">STEM</a></li>
+                  <li><a href="/Teck-gitpages/EduTeck/pakketten/pneumatica/overzicht.html">Pneumatica</a></li>
+                </ul>
+              </li>
+              <li><a href="/Teck-gitpages/EduTeck/over-ons/team.html">Team</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-button" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
 
   <main style="max-width: 600px; margin: auto; padding: 20px;">
     <form action="https://formspree.io/f/mqabzznv" method="POST" id="offerteForm">
