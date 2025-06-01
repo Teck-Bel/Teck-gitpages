@@ -335,3 +335,26 @@ form textarea:focus {
   width: 100%;
   border-radius: 12px;
 }
+
+/*ons-verhaal pagina*/
+.verhaal-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.verhaal-tekst h1 {
+  color: #003366;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.verhaal-tekst p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #333333;
+}
