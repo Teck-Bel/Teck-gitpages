@@ -9,8 +9,8 @@ body {
 
 /* ===== Headers ===== */
 header {
-  background-color: #d3e5ff;
-  color: white;
+  background-color: white;
+  color: #d3e5ff;
   padding: 10px;
   border-bottom: 2px solid #ccc;
   text-align: center;
