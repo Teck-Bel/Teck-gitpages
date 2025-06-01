@@ -297,3 +297,41 @@ form textarea:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(5, 79, 155, 0.5);
 }
+
+/*locatie pagina*/
+.locatie-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.locatie-info {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.locatie-info h1 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.locatie-info p {
+  margin: 0.5rem 0;
+}
+
+.locatie-info a {
+  color: #003366;
+  text-decoration: none;
+}
+
+.locatie-info a:hover {
+  text-decoration: underline;
+}
+
+.locatie-kaart iframe {
+  width: 100%;
+  border-radius: 12px;
+}
