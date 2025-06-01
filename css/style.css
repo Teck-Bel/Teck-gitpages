@@ -24,30 +24,6 @@ h1 {
   margin-bottom: 30px;
 }
 
-.top-nav {
-  position: fixed;
-  top: 10px;
-  right: 10px; /* verander van left: 10px naar right: 10px */
-  z-index: 1000;
-}
-
-.home-button {
-  display: inline-block;
-  padding: 10px 16px;
-  background-color: #1976d2;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  transition: background-color 0.3s;
-}
-
-.home-button:hover {
-  background-color: #1565c0;
-}
-
-
 h2 {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -55,14 +31,16 @@ h2 {
   color: #054f9b; 
 }
 
-/* ===== Navigatie ===== */
+/* ===== Navigatie (TOP-NAV IN DE HEADER met dropdown) ===== */
 .site-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 20px;
   padding: 20px;
-  background-color: #003366; /* 'backround-color' typo gecorrigeerd */
+  background-color: #003366; 
   border-radius: 12px;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -70,23 +48,66 @@ h2 {
   border-radius: 12px;
 }
 
-nav ul {
+.top-nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-nav li {
+.top-nav li {
+  position: relative;
+}
+
+.nav-button {
   display: inline-block;
-  margin-right: 15px;
-}
-
-nav a {
+  padding: 10px 16px;
+  background-color: #1976d2;
+  color: white;
   text-decoration: none;
-  color: #007bff;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.nav-button:hover {
+  background-color: #1565c0;
+}
+
+/* Dropdown-menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #003366;
+  padding: 10px 0;
+  border-radius: 8px;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #004080;
+}
+
+/* Toon dropdown op hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 /* ===== Tekst en paragrafen ===== */
