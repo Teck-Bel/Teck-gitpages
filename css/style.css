@@ -448,3 +448,41 @@ form textarea:focus {
   color: #054f9b;
 }
 
+/* Zorg dat de submenus standaard verborgen zijn */
+.top-nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white; /* of wat past bij je stijl */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 1000;
+}
+
+/* Toon het submenu enkel bij hover */
+.top-nav .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Zorg dat de bovenste dropdown goed staat */
+.top-nav .dropdown {
+  position: relative;
+}
+
+/* Optioneel: stijl submenu items */
+.top-nav .dropdown-menu li {
+  white-space: nowrap;
+}
+
+/* Voeg wat extra stijl toe aan links in submenu */
+.top-nav .dropdown-menu a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #333; /* pas aan aan je thema */
+}
+
+.top-nav .dropdown-menu a:hover {
+  background-color: #f0f0f0; /* hover effect */
+}
