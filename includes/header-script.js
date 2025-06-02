@@ -4,13 +4,18 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(data => {
       document.getElementById("header-placeholder").innerHTML = data;
 
-      // Zet de pagina-titel in de header (als opgegeven in <body data-title="...">)
+      // Titel uit <body data-title="...">
       const title = document.body.dataset.title;
-      if (title) {
-        const titleElement = document.getElementById("page-title");
-        if (titleElement) {
-          titleElement.textContent = title;
-        }
+      const titleElement = document.getElementById("page-title");
+      if (title && titleElement) {
+        titleElement.textContent = title;
+      }
+
+      // Logo uit <body data-logo="...">
+      const logoSrc = document.body.dataset.logo;
+      const logoElement = document.getElementById("site-logo");
+      if (logoSrc && logoElement) {
+        logoElement.src = logoSrc;
       }
     });
 });
