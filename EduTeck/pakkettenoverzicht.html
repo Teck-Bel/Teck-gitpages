@@ -1,68 +1,166 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EduTeck Pakketten</title>
-  <link rel="stylesheet" href="/Teck-gitpages/css/style.css"/
-</head>
-<body>
-  <header class="site-header">
-      <img src="/Teck-gitpages/images/Eduteck-logo.png" alt="Teck Logo" class="logo">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EduTeck Pakketten</title>
+    <link rel="stylesheet" href="/Teck-gitpages/css/style.css"/>
+    <link rel="icon" type="image/png" href="images/Eduteck-logo.png">
+  </head>
 
-      <!-- Titel boven de navigatie -->
-      <h1>EduTeck pakketten</h1>
-
-      <nav class="top-nav">
-        <ul>
-          <li><a class="nav-button" href="/Teck-gitpages/index.html">Home</a></li>
-          <li class="dropdown">
-            <a class="nav-button" href="/Teck-gitpages/EduTeck/index.html">SkyTeck ▾</a>
-            <ul class="dropdown-menu">
-              <li class="dropdown">
-                <a class="nav-button" href="/Teck-gitpages/EduTeck/pakkettenoverzicht.html">pakketten ▾</a>
-                <ul class="dropdown-menu">
-                  <li><a href="/Teck-gitpages/EduTeck/pakketten/STEM/overzicht.html">STEM</a></li>
-                  <li><a href="/Teck-gitpages/EduTeck/pakketten/pneumatica/overzicht.html">Pneumatica</a></li>
-                </ul>
-              </li>
-              <li><a href="/Teck-gitpages/EduTeck/over-ons/team.html">Team</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-button" href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-  <div class="container">
+  <body data-title="EduTeck" data-logo="/Teck-gitpages/images/Eduteck-logo.png">
+  <div id="header-placeholder"></div>
+    
+    <div class="container">
 
     <div class="card">
       <div class="card-header">
-        <h2>STEM pakketten</h2>
+        <h2>Base</h2>
         <span class="badge">Starter</span>
       </div>
-      <p class="overzicht-paragraaf">korte beschrijvinig</p>
+      <p class="overzicht-paragraaf">Voor kleine vaartuigen of testprojecten. Ideaal om te starten met maritieme monitoring.</p>
       <ul>
-        <li>- Arduino boat</li>
-        <li>- Zelfrijdende auto</li>
+        <li>Basis maritiem sensorsysteem (temperatuur, zoutgehalte, golfhoogte)</li>
+        <li>Lokale datalogger + Bluetooth connectie</li>
+        <li>Dashboard via mobiele app</li>
+        <li>Software-updates inbegrepen</li>
       </ul>
-      <a href="/Teck-gitpages/EduTeck/pakketten/STEM/overzicht.html" class="button">Meer info</a>
+      <a href="pakketten/base.html" class="button">Meer info</a>
     </div>
 
     <div class="card">
       <div class="card-header">
-        <h2>Pneumatica</h2>
-        <span class="badge">Starter</span>
+        <h2>Pro</h2>
+        <span class="badge">Populair</span>
       </div>
-      <p class="overzicht-paragraaf">korte beschrijvinig</p>
+      <p class="overzicht-paragraaf">Voor commerciële schepen of kusttoepassingen. Uitgebreide dataverwerking en connectiviteit.</p>
       <ul>
-        <li>- Pneumatische grijparm</li>
-        <li>- Pneumatische sorteersysteem</li>
-        <li>- Pneumatische lift</li>
+        <li>Geavanceerde sensorarray (stroming, druk, troebelheid, wind)</li>
+        <li>Real-time dataverzending via 4G/5G of satelliet</li>
+        <li>Webportaal + mobiele controle</li>
+        <li>Waarschuwingen & statusrapporten</li>
+        <li>Remote troubleshooting</li>
       </ul>
-      <a href="/Teck-gitpages/EduTeck/pakketten/pneumatica/overzicht.html" class="button">Meer info</a>
+      <a href="pakketten/pro.html" class="button">Meer info</a>
     </div>
-  </div>
 
-</body>
+    <div class="card">
+      <div class="card-header">
+        <h2>Port Guard</h2>
+        <span class="badge">Havenoplossing</span>
+      </div>
+      <p class="overzicht-paragraaf">Voor havens en offshore-installaties. Continu toezicht en geïntegreerde systemen.</p>
+      <ul>
+        <li>24/7 monitoring van waterkwaliteit, niveau en stroming</li>
+        <li>Integratie met havenbeveiliging en sluissystemen</li>
+        <li>Rapportage voor milieu-inspectie</li>
+        <li>Alarmfuncties bij afwijkingen</li>
+        <li>API voor integratie in havenbeheerplatforms</li>
+      </ul>
+      <a href="pakketten/portguard.html" class="button">Meer info</a>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Fleet Link</h2>
+        <span class="badge">Fleet</span>
+      </div>
+      <p class="overzicht-paragraaf">Voor vloten van rederijen of overheden. Centraal beheer en uitgebreide rapportage.</p>
+      <ul>
+        <li>Volledig beheersysteem voor meerdere vaartuigen</li>
+        <li>Fleet-dashboard met overzichtspagina’s</li>
+        <li>Sensorstatus per schip & onderhoudsrapporten</li>
+        <li>Maatwerk integraties (AIS, radar, weerdata)</li>
+        <li>Prioritaire support & 24/7 monitoringondersteuning</li>
+      </ul>
+      <a href="pakketten/fleetlink.html" class="button">Meer info</a>
+    </div>
+
+      <div class="card">
+      <div class="card-header">
+        <h2>Fleet Command</h2>
+        <span class="badge">Fleet</span>
+      </div>
+      <p class="overzicht-paragraaf">Voor vloten van rederijen of overheden. Centraal beheer en uitgebreide rapportage.</p>
+      <ul>
+        <li>Extra info</li>
+      </ul>
+      <a href="pakketten/fleetlink.html" class="button">Meer info</a>
+    </div>
+
+      <div class="card">
+      <div class="card-header">
+        <h2>Arduino Boat</h2>
+        <span class="badge">Model</span>
+      </div>
+      <p class="overzicht-paragraaf">Voor vloten van rederijen of overheden. Centraal beheer en uitgebreide rapportage.</p>
+      <ul>
+        <li>Extra uitleg</li>
+      </ul>
+      <a href="pakketten/fleetlink.html" class="button">Meer info</a>
+    </div>
+
+      <div class="card">
+      <div class="card-header">
+        <h2>Simulator</h2>
+        <span class="badge">Training</span>
+      </div>
+      <p class="overzicht-paragraaf">Voor vloten van rederijen of overheden. Centraal beheer en uitgebreide rapportage.</p>
+      <ul>
+        <li>Extra uitleg</li>
+      </ul>
+      <a href="pakketten/fleetlink.html" class="button">Meer info</a>
+    </div>
+
+      <div class="card">
+      <div class="card-header">
+        <h2>Boeien Hijs Systeem (BHS)</h2>
+        <span class="badge">Industrial</span>
+      </div>
+      <p class="overzicht-paragraaf">Voor vloten van rederijen of overheden. Centraal beheer en uitgebreide rapportage.</p>
+      <ul>
+        <li>Mini kraan voor op een boot</li>
+      </ul>
+      <a href="pakketten/fleetlink.html" class="button">Meer info</a>
+    </div>
+
+      <div class="card">
+      <div class="card-header">
+        <h2>Parcours Leggen Systeem (PLS)</h2>
+        <span class="badge"> For race organisations</span>
+      </div>
+      <p class="overzicht-paragraaf">Voor vloten van rederijen of overheden. Centraal beheer en uitgebreide rapportage.</p>
+      <ul>
+        <li>Maakt boeien leggen en uithalen minder zwaar</li>
+      </ul>
+      <a href="pakketten/fleetlink.html" class="button">Meer info</a>
+    </div>
+    </div>
+
+     <footer>
+     <div class="footer-section">
+        <h4>Over AquaTeck</h4>
+        <a href="/Teck-gitpages/EduTeck/over-ons/ons-verhaal.html">Ons verhaal</a>
+        <a href="/Teck-gitpages/EduTeck/over-ons/contact.html">Contact</a>
+        <a href="/Teck-gitpages/EduTeck/over-ons/team.html">Team</a>
+       <a href="/Teck-gitpages/EduTeck/over-ons/locatie.html">Locatie</a>
+      </div>
+      <div class="footer-section">
+        <h4>Andere Afdelingen</h4>
+        <a href="/Teck-gitpages/ModelTeck/index.html">Modelbouw</a>
+        <a href="/Teck-gitpages/SkyTeck/index.html">Luchtvaart</a>
+        <a href="/Teck-gitpages/EduTeck/index.html">Educatief</a>
+        <a href="/Teck-gitpages/AquaTeck/index.html">Maritiem</a>
+      </div>
+      <div class="footer-section">
+        <h4>Volg ons</h4>
+        <a href="https://www.instagram.com/teck.belgium/">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+     </footer>
+
+     <div class="copyright">
+      &copy; 2025 EduTeck. Alle rechten voorbehouden.
+    </div>
+    <script src="/Teck-gitpages/includes/header-script.js"></script>
+  </body>
 </html>
