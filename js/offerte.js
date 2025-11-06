@@ -4,9 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Producten per afdeling
   const productenPerAfdeling = {
-    SkyTeck: ['Product ST1', 'Product ST2', 'Product ST3'],
-    WaterTeck: ['Product WT1', 'Product WT2'],
-    EduTeck: ['Product ET1', 'Product ET2', 'Product ET3', 'Product ET4']
+    SkyTeck: ['Checklist app', 'Bug wipper bedienings systeem', 'ATC simulator', 'Flight VFR simulator', 'Flight IFR simulator', 'Flight + ATC simulator', 'Zwever hoofdwiel aandrijving'],
+    AquaTeck: ['Base', 'Pro', 'Fleet Link', 'Port Guard', 'Fleet Command', 'Arduino Boat', 'Simulator', 'Boeien hijs systeem', 'Parcours leggen systeem'],
+    EduTeck: ['Arduino Boat', 'Zelfrijdende mini auto', 'Luchtvaart introductie', 'Drones & programmeren', 'Vliegtuig op lucht'],
+    ModelTeck:['Aruino Boat', 'Arduino hijskraan', 'Arduino boeien kraan']
   };
 
   afdelingSelect.addEventListener('change', function() {
