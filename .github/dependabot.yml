@@ -1,0 +1,21 @@
+version: 2
+updates:
+  # 🔹 1. NPM / Node.js packages (voor websites of apps)
+  - package-ecosystem: "npm"
+    directory: "/"  # hoofdmap van je project
+    schedule:
+      interval: "weekly"  # 1x per week controleren
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "⬆️ deps"
+    allow:
+      - dependency-type: "direct"
+    ignore:
+      - dependency-name: "firebase" # voorbeeld: kan je uitsluiten
+        versions: ["<9.0.0"]
+
+  # 🔹 2. GitHub Actions (optioneel maar aanbevolen)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
