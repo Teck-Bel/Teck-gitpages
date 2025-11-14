@@ -2,36 +2,37 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact | Teck</title>
-  <link rel="stylesheet" href="/Teck-gitpages/css/style.css"/
-  </head>
-<body data-title="Contact" data-logo="/Teck-gitpages/images/teck-logo.png">
+  <title>Contact</title>
+  <link rel="icon" type="image/png" href="/Teck-gitpages/images/teck-logo.png" />
+  <link rel="stylesheet" href="/Teck-gitpages/css/style.css" />
+</head>
+
+  
+ <body data-title="Contact" data-logo="/Teck-gitpages/images/teck-logo.png">
   <div id="header-placeholder"></div>
-    </header>
 
-  <main>
-    <h2>Neem contact met ons op</h2>
-    <form action="mailto:teck.belgium@outlook.com" method="post" enctype="text/plain">
-      <label for="naam">Naam</label>
-      <input type="text" id="naam" name="naam" required />
+  <main style="max-width: 600px; margin: auto; padding: 20px;">
+    <form action="https://formspree.io/f/xvgdzwaj" method="POST" id="offerteForm">
+      <label for="naam">Naam:</label><br />
+      <input type="text" name="naam" id="naam" required /><br /><br />
 
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" required />
+      <label for="email">E-mail:</label><br />
+      <input type="email" name="email" id="email" required /><br /><br />
 
-      <label for="bericht">Bericht</label>
-      <textarea id="bericht" name="bericht" required></textarea>
+      <label for="bericht">Bericht:</label><br />
+      <textarea name="bericht" id="bericht" rows="6" required></textarea><br /><br />
 
-      <button type="submit">Verstuur</button>
+      <button type="submit" class="button">Verzenden</button>
     </form>
   </main>
 
   <footer>
-   
-  </footer>
-   <div class="copyright">
-      &copy; 2025 Teck. Alle rechten voorbehouden.
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <a href="mailto:teck.belgium@outlook.be">teck.belgium@outlook.be</a>
     </div>
+  </footer>
 <script src="/Teck-gitpages/includes/header-script.js"></script>
+  <script src="/Teck-gitpages/js/offerte.js"></script>
 </body>
 </html>
